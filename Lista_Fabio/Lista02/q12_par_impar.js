@@ -1,16 +1,18 @@
 const entrada = require("prompt-sync")()
 
 function main(){
-    console.log("#### Par ou ímpar ####")
-
+    
     // Entrada
     const numero = Number(entrada("Digite um número: "))
 
-    // Processamento/ Saída
+    // Processamento
+    let resultado
     if (numero % 2 === 0){
-        console.log(`O número ${numero} é par.`)
+        resultado = "O número é par."
     }else{
-        console.log(`O número ${numero} é ímpar.`)
+        resultado = "O número é ímpar."
     }
+    // Saída
+    console.log(resultado)
 }
 main()
